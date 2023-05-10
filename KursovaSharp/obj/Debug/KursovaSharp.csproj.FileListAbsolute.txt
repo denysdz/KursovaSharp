@@ -1,0 +1,14 @@
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\bin\Debug\KursovaSharp.exe.config
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\bin\Debug\KursovaSharp.exe
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\bin\Debug\KursovaSharp.pdb
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.csproj.AssemblyReference.cache
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.Properties.Resources.resources
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.csproj.GenerateResource.cache
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.csproj.CoreCompileInputs.cache
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.exe
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.pdb
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.Kursova.resources
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.RealNumberForm.resources
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.classes.ComplexNumberForm.resources
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.classes.MatrixForm.resources
