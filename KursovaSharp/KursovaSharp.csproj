@@ -47,6 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\ComplexNumber.cs" />
+    <Compile Include="classes\Utils.cs" />
+    <Compile Include="LastBinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastBinding.Designer.cs">
+      <DependentUpon>LastBinding.cs</DependentUpon>
+    </Compile>
     <Compile Include="MatrixForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +85,21 @@
     <Compile Include="RealNumberForm.Designer.cs">
       <DependentUpon>RealNumberForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="VectorComplexFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VectorComplexFrom.Designer.cs">
+      <DependentUpon>VectorComplexFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VectorForm.Designer.cs">
+      <DependentUpon>VectorForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LastBinding.resx">
+      <DependentUpon>LastBinding.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MatrixForm.resx">
       <DependentUpon>MatrixForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +120,12 @@
     </Compile>
     <EmbeddedResource Include="RealNumberForm.resx">
       <DependentUpon>RealNumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VectorComplexFrom.resx">
+      <DependentUpon>VectorComplexFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VectorForm.resx">
+      <DependentUpon>VectorForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -34,6 +34,21 @@ namespace KursovaSharp {
             MatrixForm matrixForm = new MatrixForm();
             matrixForm.Show();
         }
+
+        private void vactorBtn_Click(object sender, EventArgs e) {
+            VectorForm vectorForm = new VectorForm();
+            vectorForm.Show();
+        }
+
+        private void vectorCompexNumbersBtn_Click(object sender, EventArgs e) {
+            VectorComplexFrom vectorComplexFrom = new VectorComplexFrom();
+            vectorComplexFrom.Show();
+        }
+
+        private void bindingBtn_Click(object sender, EventArgs e) {
+            LastBinding lastBinding = new LastBinding();
+            lastBinding.Show();
+        }
     }
 
 }

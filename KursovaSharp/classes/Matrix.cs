@@ -62,7 +62,7 @@ namespace KursovaSharp.classes {
             for (int i = 0; i < rows; i++) {
                 for (int j = 0; j < columns; j++) {
                     sb.Append(data[i, j]);
-                    sb.Append(" ");
+                    sb.Append("\t");
                 }
                 sb.AppendLine();
             }

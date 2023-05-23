@@ -10,37 +10,28 @@ using System.Windows.Forms;
 
 namespace KursovaSharp.classes {
     public partial class ComplexNumberForm : Form {
+
         public ComplexNumberForm() {
             InitializeComponent();
         }
 
         private void calcBtn_Click(object sender, EventArgs e) {
             resultBox.Items.Clear();
-            if (realEdit.Text.Length > 0 && imageEdit.Text.Length > 0) {
-                if (isValidNumber(realEdit.Text.ToString()) && isValidNumber(imageEdit.Text.ToString())) {
-                    errorLabel.Text = "";
-                    double realNumber = Convert.ToDouble(realEdit.Text);
-                    double imageNumber = Convert.ToDouble(imageEdit.Text);
-                    ComplexNumber complexNumber = new ComplexNumber(realNumber, imageNumber);
-                    resultBox.Items.Add("Задане число: " + complexNumber.ToString());
-                    resultBox.Items.Add("Норма заданого числа: " + complexNumber.Norm().ToString());
-                }
-                else {
-                    errorLabel.Text = "Дозволено тільки дійсні числа!";
-                }
-            }
-            else {
+            if (realEdit.Text.Length == 0 || imageEdit.Text.Length == 0) {
                 errorLabel.Text = "Заповніть всі поля!";
+                return;
             }
-        }
-
-        private bool isValidNumber(String value) {
-            double number;
-            if (double.TryParse(value, out number)) {
-                return true;
+            if (!Utils.isValidDoubleNumber(realEdit.Text.ToString()) || !Utils.isValidDoubleNumber(imageEdit.Text.ToString())) {
+                errorLabel.Text = "Дозволено тільки дійсні числа!";
+                return;
             }
-            return false;
-        }
+            errorLabel.Text = "";
+            double realNumber = Convert.ToDouble(realEdit.Text);
+            double imageNumber = Convert.ToDouble(imageEdit.Text);
+            ComplexNumber complexNumber = new ComplexNumber(realNumber, imageNumber);
+            resultBox.Items.Add("Задане число: " + complexNumber.ToString());
+            resultBox.Items.Add("Норма заданого числа: " + complexNumber.Norm().ToString());
+        }        
 
     }
 }

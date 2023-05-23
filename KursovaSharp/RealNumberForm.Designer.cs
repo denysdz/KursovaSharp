@@ -91,15 +91,15 @@
             this.resultBox.FormattingEnabled = true;
             this.resultBox.HorizontalScrollbar = true;
             this.resultBox.ItemHeight = 16;
-            this.resultBox.Location = new System.Drawing.Point(185, 309);
+            this.resultBox.Location = new System.Drawing.Point(162, 309);
             this.resultBox.Name = "resultBox";
-            this.resultBox.Size = new System.Drawing.Size(192, 116);
+            this.resultBox.Size = new System.Drawing.Size(244, 116);
             this.resultBox.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(182, 281);
+            this.label4.Location = new System.Drawing.Point(159, 281);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 16);
             this.label4.TabIndex = 8;

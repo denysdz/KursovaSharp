@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KursovaSharp.classes {
    
-    class ComplexNumber : RealNumber {
+    public class ComplexNumber : RealNumber {
         private double imageNumber;
         public ComplexNumber(double realNumber = 0.0, double imageNumber = 0.0) : base(realNumber) {
             this.imageNumber = imageNumber;

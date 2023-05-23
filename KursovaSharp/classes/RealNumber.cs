@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace KursovaSharp.classes {
-    internal class RealNumber {
+    public class RealNumber {
 
         private double value;
         public RealNumber() {

@@ -17,22 +17,22 @@ namespace KursovaSharp.classes {
         }
 
         private void createMatrix_Click(object sender, EventArgs e) {
-            if (rowEdit.Text.Length > 0 && colmEdit.Text.Length > 0) {
-                if (isValidParam(rowEdit.Text.ToString()) && isValidParam(rowEdit.Text.ToString())) {
-                    int rows = int.Parse(rowEdit.Text.ToString());
-                    int cols = int.Parse(colmEdit.Text.ToString());
-                    matrix = new Matrix(rows, cols);
-                    displayMatrix(matrix);
-                    calcBtn.Visible= true;
-                    resultLabel.Visible= true;
-                    resultBox.Visible= true;
-                } else {
-                    errorLabel.Text = "Дозволено тільки натуральні числа!";
-                }
+            errorLabel.Text = "";
+            if (rowEdit.Text.Length == 0 && colmEdit.Text.Length == 0) {
+                errorLabel.Text = "Заповніть всі поля!"; 
+                return;
             }
-            else {
-                errorLabel.Text = "Заповніть всі поля!";
+            if (!Utils.isValidIntNumber(rowEdit.Text.ToString()) || !Utils.isValidIntNumber(rowEdit.Text.ToString())) {
+                errorLabel.Text = "Дозволено тільки натуральні числа!";
+                return;
             }
+            int rows = int.Parse(rowEdit.Text.ToString());
+            int cols = int.Parse(colmEdit.Text.ToString());
+            matrix = new Matrix(rows, cols);
+            displayMatrix(matrix);
+            calcBtn.Visible= true;
+            resultLabel.Visible= true;
+            resultBox.Visible= true;
         }
 
         private void displayMatrix(Matrix matrix) {
@@ -53,24 +53,8 @@ namespace KursovaSharp.classes {
             }
         }
 
-        private bool isValidNumberDouble(String value) {
-            double number;
-            if (double.TryParse(value, out number)) {
-                return true;
-            }
-            return false;
-        }
-
-        private bool isValidParam(String value) {
-            int number;
-            if (int.TryParse(value, out number)) {
-                return true;
-            }
-            return false;
-        }
-
         private void matrixGrid_CellValidating(object sender, DataGridViewCellValidatingEventArgs e) {
-            if (isValidNumberDouble(e.FormattedValue.ToString())) {
+            if (Utils.isValidDoubleNumber(e.FormattedValue.ToString())) {
                 matrix[e.RowIndex, e.ColumnIndex] = Convert.ToDouble(e.FormattedValue.ToString());
             } else {
                 MessageBox.Show("Введене значення не є коректним. Дозволено тільки дійсні числа!");

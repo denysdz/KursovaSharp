@@ -12,3 +12,6 @@ C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\Kursova
 C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.RealNumberForm.resources
 C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.classes.ComplexNumberForm.resources
 C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.classes.MatrixForm.resources
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.VectorForm.resources
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.VectorComplexFrom.resources
+C:\Users\miste\OneDrive\Робочий стіл\ІСТ-21\Курсова\KursovaSharp\KursovaSharp\obj\Debug\KursovaSharp.LastBinding.resources

@@ -16,6 +16,11 @@ namespace KursovaSharp.classes {
             data = v;
         }
 
+        public List<ComplexNumber> Data {
+            get { return data; }
+            private set { data = value; }
+        }
+
         public void PushBack(ComplexNumber c) {
             data.Add(c);
         }
@@ -35,16 +40,16 @@ namespace KursovaSharp.classes {
         }
 
         public override string ToString() {
-            string output = "[";
+            StringBuilder output = new StringBuilder("[");
             for (int i = 0; i < data.Count; i++) {
-                output += data[i].ToString();
+                output.Append(data[i].ToString());
                 if (i < data.Count - 1) {
-                    output += ", ";
+                    output.Append(", ");
                 }
             }
-            output += "]";
-            return output;
+            output.Append("]");
+            return output.ToString();
         }
-
     }
+
 }

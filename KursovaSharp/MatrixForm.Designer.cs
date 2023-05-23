@@ -138,9 +138,9 @@
             // 
             // resultLabel
             // 
-            this.resultLabel.Location = new System.Drawing.Point(255, 422);
+            this.resultLabel.Location = new System.Drawing.Point(67, 422);
             this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(304, 23);
+            this.resultLabel.Size = new System.Drawing.Size(674, 23);
             this.resultLabel.TabIndex = 13;
             this.resultLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resultLabel.Visible = false;

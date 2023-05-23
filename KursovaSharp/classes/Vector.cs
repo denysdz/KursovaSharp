@@ -22,6 +22,12 @@ namespace KursovaSharp.classes {
             }
         }
 
+        public Vector(double[] arr) : base() {
+            size = arr.Length;
+            values = new double[size];
+            Array.Copy(arr, values, size);
+        }
+
         ~Vector() {
             if (values != null) {
                 Array.Clear(values, 0, values.Length);
@@ -29,19 +35,16 @@ namespace KursovaSharp.classes {
         }
 
         public double this[int index] {
-            get
-            {
+            get {
                 return values[index];
             }
-            set
-            {
+            set {
                 values[index] = value;
             }
         }
 
         public int Size {
-            get
-            {
+            get {
                 return size;
             }
         }
@@ -53,60 +56,6 @@ namespace KursovaSharp.classes {
             return Math.Sqrt(sum);
         }
 
-        /*
-        public static Vector operator +(Vector v1, Vector v2) {
-            if (v1.Size != v2.Size) {
-                throw new ArgumentException("Вектори повинні мати одинаковий розмір");
-            }
-            Vector result = new Vector(v1.Size);
-            for (int i = 0; i < result.Size; i++) {
-                result[i] = v1[i] + v2[i];
-            }
-            return result;
-        }
-
-        public static Vector operator -(Vector v1, Vector v2) {
-            if (v1.Size != v2.Size) {
-                throw new ArgumentException("Вектори повинні мати одинаковий розмір");
-            }
-            Vector result = new Vector(v1.Size);
-            for (int i = 0; i < result.Size; i++) {
-                result[i] = v1[i] - v2[i];
-            }
-            return result;
-        }
-
-        public static double operator *(Vector v1, Vector v2) {
-            if (v1.Size != v2.Size) {
-                throw new ArgumentException("Вектори повинні мати одинаковий розмір");
-            }
-            double result = 0.0;
-            for (int i = 0; i < v1.Size; i++) {
-                result += v1[i] * v2[i];
-            }
-            return result;
-        }
-
-        public static Vector operator *(Vector v, double scalar) {
-            Vector result = new Vector(v.Size);
-            for (int i = 0; i < result.Size; i++) {
-                result[i] = v[i] * scalar;
-            }
-            return result;
-        }
-
-        public static Vector operator /(Vector v, double scalar) {
-            if (scalar == 0.0) {
-                throw new DivideByZeroException("Cannot divide vector by zero");
-            }
-            Vector result = new Vector(v.Size);
-            for (int i = 0; i < result.Size; i++) {
-                result[i] = v[i] / scalar;
-            }
-            return result;
-        }
-
-        */
         public override string ToString() {
             StringBuilder sb = new StringBuilder();
             sb.Append("{");

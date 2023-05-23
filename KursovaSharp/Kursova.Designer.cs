@@ -29,7 +29,7 @@
             this.complexNumberBtn = new System.Windows.Forms.Button();
             this.matrixBtn = new System.Windows.Forms.Button();
             this.vactorBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.vectorCompexNumbersBtn = new System.Windows.Forms.Button();
             this.bindingBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -90,28 +90,31 @@
             // 
             this.vactorBtn.Location = new System.Drawing.Point(77, 206);
             this.vactorBtn.Name = "vactorBtn";
-            this.vactorBtn.Size = new System.Drawing.Size(163, 39);
+            this.vactorBtn.Size = new System.Drawing.Size(163, 47);
             this.vactorBtn.TabIndex = 5;
             this.vactorBtn.Text = "Клас Вектор";
             this.vactorBtn.UseVisualStyleBackColor = true;
+            this.vactorBtn.Click += new System.EventHandler(this.vactorBtn_Click);
             // 
-            // button1
+            // vectorCompexNumbersBtn
             // 
-            this.button1.Location = new System.Drawing.Point(259, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(246, 39);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Клас Вектор Комплексних чисел";
-            this.button1.UseVisualStyleBackColor = true;
+            this.vectorCompexNumbersBtn.Location = new System.Drawing.Point(259, 206);
+            this.vectorCompexNumbersBtn.Name = "vectorCompexNumbersBtn";
+            this.vectorCompexNumbersBtn.Size = new System.Drawing.Size(246, 47);
+            this.vectorCompexNumbersBtn.TabIndex = 6;
+            this.vectorCompexNumbersBtn.Text = "Клас Вектор Комплексних чисел";
+            this.vectorCompexNumbersBtn.UseVisualStyleBackColor = true;
+            this.vectorCompexNumbersBtn.Click += new System.EventHandler(this.vectorCompexNumbersBtn_Click);
             // 
             // bindingBtn
             // 
             this.bindingBtn.Location = new System.Drawing.Point(526, 205);
             this.bindingBtn.Name = "bindingBtn";
-            this.bindingBtn.Size = new System.Drawing.Size(176, 40);
+            this.bindingBtn.Size = new System.Drawing.Size(176, 48);
             this.bindingBtn.TabIndex = 7;
             this.bindingBtn.Text = "Демонстрація пізнього зв\'язування";
             this.bindingBtn.UseVisualStyleBackColor = true;
+            this.bindingBtn.Click += new System.EventHandler(this.bindingBtn_Click);
             // 
             // exitBtn
             // 
@@ -130,7 +133,7 @@
             this.ClientSize = new System.Drawing.Size(800, 394);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.bindingBtn);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.vectorCompexNumbersBtn);
             this.Controls.Add(this.vactorBtn);
             this.Controls.Add(this.matrixBtn);
             this.Controls.Add(this.complexNumberBtn);
@@ -152,7 +155,7 @@
         private System.Windows.Forms.Button complexNumberBtn;
         private System.Windows.Forms.Button matrixBtn;
         private System.Windows.Forms.Button vactorBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button vectorCompexNumbersBtn;
         private System.Windows.Forms.Button bindingBtn;
         private System.Windows.Forms.Button exitBtn;
     }
